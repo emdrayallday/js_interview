@@ -50,3 +50,5 @@
 
   A function that is immediately ran, this could be used to eliminate global variables
   <br>since the variable will be in a function scope instead of global scope.
+
+10. What are function closures?
