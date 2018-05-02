@@ -33,4 +33,9 @@
 6. What are the different scopes in javascript?
 
   Global variables --- available any part which also adds to global object in node or window object in browser<br>
-  
+
+  function or local scope variables --- only available inside function
+
+7. What is variable hoisting?
+
+  variables are split initially, they are declared at the top but only assigned when it's time to run. See hoisting.js
