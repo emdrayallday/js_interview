@@ -33,9 +33,18 @@ a = 1 // Error;
 //// Difference btwn null/undefined
 //////////////////////////
 
-var a
-console.log('a was not assigned', a)
+var what
+console.log('what was not assigned', what)
 
 var b = null
 
 console.log('b is null, only a programmer will ever set a value to null', b)
+
+/* In static language like Java, we are saying we know a will be a string
+    we just don't know what it is yet (concept of an absense of a value)
+
+String a = null
+*/
+
+
+// in javascript null is actually a value of "null"
