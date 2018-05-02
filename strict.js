@@ -5,7 +5,7 @@
 
 // why a string? when it was first implemented all browsers didn't support
 // so if not a string an older browser would have failed, but if it's a string an older browser would just be like hey it's a string no biggie
-
+"use strict"
 
 
 /////////
@@ -26,5 +26,15 @@ function newCode() {
     global object. In the browser it's window, in Node its global.
 */
 
-iWasNotDeclared = 2
-console.log(global.iWasNotDeclared)
+// iWasNotDeclared = 2
+// console.log(global.iWasNotDeclared)
+
+var theVal = 0;
+
+thVal = 1
+if (theVal > 0) {
+  console.log("Hello!")
+}
+
+// you would expect to see hello since you assigned theVal to 1, however you made a syntax error.
+// if using "use strict" at the top of the file you will get an error saying thVal is not defined!!!
