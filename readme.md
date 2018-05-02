@@ -17,3 +17,20 @@
   Null<br> - primitive
   Undefined<br> - primitive
   Object
+
+4. Difference of == and ===?
+
+  triple = checks for type and value, double = checks for values.
+
+5. NaN coercion
+
+  isNaN("1") will be false even though it's a string.<br>
+  this is because of type coercion in JS.<br>
+  Imagine using Number("1") inside of the isNaN()
+
+  in interview say you can compare NaN to itself, which will always be false if not a number.
+
+6. What are the different scopes in javascript?
+
+  Global variables --- available any part which also adds to global object in node or window object in browser<br>
+  
