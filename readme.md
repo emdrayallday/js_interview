@@ -43,3 +43,10 @@
 8. What is scope chain?
 
   In JS it's lexically, which means it runs in order on page
+
+9. What is an IIFE and why might you use it?
+
+  Immediately Invoked Function Expression pronounced iffy
+
+  A function that is immediately ran, this could be used to eliminate global variables
+  <br>since the variable will be in a function scope instead of global scope.
