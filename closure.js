@@ -46,3 +46,13 @@ for (var i = 0; i < 10; i++) {
 console.log(foo[0]())
 console.log(foo[1]())
 console.log(foo[2]())
+
+
+var foo = []
+for (var i = 0; i < 10; i++) {
+  (function(y){
+      foo[y] = function() { return y }
+  })(i)
+
+
+}
