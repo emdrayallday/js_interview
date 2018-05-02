@@ -27,3 +27,15 @@ a = 1 // Error;
 // With dynamic you can get up and running quickly, but only see errors at runtime
 
 // With static, the compiler will throw an error earlier
+
+
+///////////////////////////
+//// Difference btwn null/undefined
+//////////////////////////
+
+var a
+console.log('a was not assigned', a)
+
+var b = null
+
+console.log('b is null, only a programmer will ever set a value to null', b)
