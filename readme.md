@@ -39,3 +39,7 @@
 7. What is variable hoisting?
 
   variables are split initially, they are declared at the top but only assigned when it's time to run. See hoisting.js
+
+8. What is scope chain?
+
+  In JS it's lexically, which means it runs in order on page
