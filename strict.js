@@ -2,7 +2,7 @@
 // code errors that would otherwise have been ignored
 
  // *** "use strict" // <--- how to enable it! -- must be string
-
+"use strict"
 /* uses
 
  1)Let's you know when you've forgotten to declare a variable
@@ -16,7 +16,7 @@
 
 // why a string? when it was first implemented all browsers didn't support
 // so if not a string an older browser would have failed, but if it's a string an older browser would just be like hey it's a string no biggie
-"use strict"
+
 
 
 /////////
@@ -56,6 +56,11 @@ if (theVal > 0) {
 //// Example 2
 ///////////////////
 
+// in strict mode you will get error for trying to delete the variable
+var deleteMe = 'no'
+delete deleteMe
+console.log('is deleteMe gone?', deleteMe)
+
 
 
 ////////////////////
@@ -63,12 +68,16 @@ if (theVal > 0) {
 ///////////////////
 
 
+var let = 1
+console.log('let', let)
 ////////////////////
 //// Example 4
 ///////////////////
 
+/*
+ If strict mode is off, the variable will equal 1, not 2 like you would think
+*/
+
 var a = 2
 eval("var a = 1")
-console.log(a)
-
-/*
+console.log('This should be equal to 2, not --', a)
