@@ -8,3 +8,12 @@
 
   Passing primitive types (Numbers, Booleans, Strings) are passed by value <br>
   Passing Objects are passed by reference
+
+3. What are the different types in JS?
+
+  Boolean<br> - primitive
+  Number<br> - primitive
+  String<br> - primitive
+  Null<br> - primitive
+  Undefined<br> - primitive
+  Object
