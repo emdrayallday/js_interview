@@ -11,12 +11,12 @@
 
 3. What are the different types in JS?
 
-  Boolean<br> - primitive
-  Number<br> - primitive
-  String<br> - primitive
-  Null<br> - primitive
-  Undefined<br> - primitive
-  Object
+  -  Boolean<br> - primitive
+  -  Number<br> - primitive
+  -  String<br> - primitive
+  -  Null<br> - primitive
+  -  Undefined<br> - primitive
+  -  Object
 
 4. Difference of == and ===?
 
@@ -52,3 +52,6 @@
   <br>since the variable will be in a function scope instead of global scope.
 
 10. What are function closures?
+
+11. This Keyword?
+  Determined by the way a function is called. If there is no calling context such as mark.checkThis() it will look at the window object
