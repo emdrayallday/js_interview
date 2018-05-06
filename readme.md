@@ -55,3 +55,6 @@
 
 11. This Keyword?
   Determined by the way a function is called. If there is no calling context such as mark.checkThis() it will look at the window object
+
+12. Call, Bind, Apply?
+  Different ways of stabilizing the this keyword
