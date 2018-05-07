@@ -58,3 +58,5 @@
 
 12. Call, Bind, Apply?
   Different ways of stabilizing the this keyword
+
+13. What is the prototype chain?
