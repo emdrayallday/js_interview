@@ -71,3 +71,14 @@ const otherPerson = {
 // 2nd parameter of object create
 const markyMark = Object.create(otherPerson, {firstName: {value: 'mark'}, lastName: {value: 'johnson'}})
 console.log(markyMark.fullName())
+
+
+function personFactory(firstName, lastName) {
+  var person = Object.create(otherPerson)
+  person.firstName = firstName
+  person.lastName = lastName
+  return person
+}
+
+var marko = personFactory('mark', 'johnson')
+console.log('marko', marko)
