@@ -65,3 +65,6 @@
   classical - java / c++ ... class that acts as blueprint of house, then create instance that builds that house.
   prototype - all object orientation in js is based on prototypes - pseudo classical inheritance and
 15. How do you do pseudo classical inheritance?
+16. What is cors?
+  cross origin resource sharing
+  cors allows you to break same origin policy of browser
