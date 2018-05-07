@@ -60,3 +60,7 @@
   Different ways of stabilizing the this keyword
 
 13. What is the prototype chain?
+14. What is the difference between classical and prototype in javascript?
+
+  classical - java / c++ ... class that acts as blueprint of house, then create instance that builds that house.
+  prototype - all object orientation in js is based on prototypes
