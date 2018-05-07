@@ -49,3 +49,25 @@ console.log(dude.fullNameProto())
 
 // advantage of the prototype approach
 // if you create multiplce instances, they all share the same prototype. saves on memory
+
+////////////////////////////
+// Prototypal inheritance in JavaScript
+////////////////////////////
+
+// more natural oo solution for JS
+
+// it's just the prototype chain, no class or pseudo class.
+
+const otherPerson = {
+  init: function(firstName,lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+    return this
+  },
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName
+  }
+}
+// 2nd parameter of object create
+const markyMark = Object.create(otherPerson, {firstName: {value: 'mark'}, lastName: {value: 'johnson'}})
+console.log(markyMark.fullName())
