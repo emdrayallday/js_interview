@@ -32,3 +32,16 @@ console.log(dude.fullName())
 // another way is by using function prototypes
 
 // first we dive into the new keyword
+// var dude = new Person('mark', 'johnson')
+
+// we create an instance of the person pseudo class by calling person constrcutor with the new Keyword
+// created instance called dude with fname and lame of mark johnson
+// the proto property of dude points to ...
+// dude proto points to the prototype object of the function
+//but first functions have prototype. which points to an object.
+// this points to object with constructor and another __proto__
+
+Person.prototype.fullNameProto = function () {
+  return this.firstName + ' ' this.lastName
+}
+console.log(dude.fullNameProto)
