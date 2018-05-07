@@ -25,3 +25,15 @@ console.log(animal.isPrototypeOf(person))
 if (person.kind === 'human') {
   console.log('whoop! i am a human!')
 }
+
+// updating a property that previously was on the prototype object
+// adds it to the object and not the prototype object
+person.kind = 'igloo'
+console.log('person.kind', person.kind)
+console.log('animal.kind', animal.kind)
+
+// another way to add prototype in es5.
+// this does the same thing assigning animal to prototype of mark object
+const mark = Object.create(animal, {food: {value:"hello"}})
+
+console.log(mark.food)
