@@ -42,6 +42,10 @@ console.log(dude.fullName())
 // this points to object with constructor and another __proto__
 
 Person.prototype.fullNameProto = function () {
-  return this.firstName + ' ' this.lastName
+  return this.firstName + ' ' + this.lastName
 }
-console.log(dude.fullNameProto)
+console.log(dude.fullNameProto())
+
+
+// advantage of the prototype approach
+// if you create multiplce instances, they all share the same prototype. saves on memory
